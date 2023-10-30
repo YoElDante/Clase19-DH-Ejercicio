@@ -1,0 +1,105 @@
+/* ----------------- */
+/* ESTILOS GENERALES */
+/* ----------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: silver;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* provisorio */
+img {
+    width: 300px;
+}
+
+/* ---------- */
+/*   HEADER   */
+/* ---------- */
+
+header {
+    background-color: grey;
+    padding-bottom: 1rem;
+    border-bottom: 3px black solid;
+}
+
+
+/* ---------- */
+/*    MAIN    */
+/* ---------- */
+
+/* rta 1) */
+
+.welcome {
+    width: 90%;
+    background-color: darkcyan;
+}
+
+.articulo1 {
+    width: 50%;
+}
+
+
+/* ------------ */
+/*    FOOTER    */
+/* ------------ */
+
+footer {
+    background-color: darkcyan;
+    color: white;
+    border-top: 3px solid black;
+}
+
+/* ------------------ */
+/*    MEDIA QUERIES   */
+/* ------------------ */
+
+/* rta 2) */
+
+@media (min-width:576px) {
+
+    body {
+        background-color: indigo;
+    }
+
+    .welcome,
+    .articulo1 {
+        width: 70%;
+        text-align: center;
+    }
+}
+
+/* rta 3) */
+
+@media (min-width:768px) {
+    body {
+        background-color: none;
+    }
+
+    .welcome,
+    .articulo1 {
+        background-color: darkcyan;
+    }
+
+}
+
+/* rta 4) */
+@media (min-width:992px){
+
+    .welcome,
+    .articulo1 {
+        border: 10px solid black;
+    }
+}
+
+/* rta 5) */
+@media (min-width:1200px) {
+    .welcome,
+    .articulo1 {
+        max-width: 1100px;
+    }
+    
+}
